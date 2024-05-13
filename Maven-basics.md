@@ -62,12 +62,5 @@ For example, the compile phase has a compiler:compile goal responsible for compi
 
 - Consider a scenario where we do not want to run the tests while packaging or installing the Java project. In this case, we use ```-DskipTests``` along with the actual command. If we need to run the install step by skipping the tests associated with the project, the command would be: ```mvn install -DskipTests```
 
-
-## Maven Repository:
-
-- Repository where is artifacts is stored. Build artifacts means dependent file. eg. dependant JAR file and build outcome.
-  
-- There are two type of repo, local and remote. Local maven repo .m2 in user system it stores the dependent file.
-  
-- Maven remote repo is set by the third party (nexus) to provide access and distribute dependent file. Ex: repo.maven.apache.org from internet.
+- we can use single command to build the packages: ```mvn clean packages```
 
