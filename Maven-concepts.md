@@ -1,0 +1,27 @@
+## Maven Repository:
+
+- Repository where is artifacts is stored. Build artifacts means dependent file. eg. dependant JAR file and build outcome.
+  
+- There are two type of repo, local and remote. Local maven repo .m2 in user system it stores the dependent file.
+  
+- Maven remote repo is set by the third party (nexus) to provide access and distribute dependent file. Ex: repo.maven.apache.org from internet.
+
+
+## POM: Project Object Model:
+
+- It's an XML file named ```pom.xml``` that resides in the root directory of a Maven project. ***The POM file serves as the project's configuration file and contains essential information*** Maven uses to manage the project's build, dependencies.
+  
+- The POM file acts as the project's roadmap for Maven. ***When you run Maven commands like mvn compile, mvn test, or mvn package, Maven reads the POM file to understand what needs to be done based on the configurations provided***.
+
+## Maven Dependencies:
+
+- Dependencies are declared within the <dependencies> section of the POM file. Each dependency includes details like the group ID, artifact ID, version, and sometimes a scope, which determines in which part of the build process the dependency is needed (e.g., compile time, test time, runtime)
+
+- in programming, when you're building a project, you need other pieces of code or libraries made by others to help you. These are called dependencies. Maven keeps a list of these "ingredients" in a file called pom.xml so that when you start working on your project, Maven knows what other pieces of code you need and gets them for you automatically.
+
+
+## Maven Plugins:
+
+- Imagine plugins as specialized tools you use to build or do something with your project. Just like how you might use a mixer or an oven when cooking, plugins help Maven do specific tasks like compiling your code, running tests, or making a finished package ready to use. Maven uses these plugins as tools to get the job done according to the instructions you give in the pom.xml file.
+
+- In short, dependencies are like ingredients you need for your project, and plugins are like the special tools Maven uses to build your project the way you want it to be built. Both are managed and instructed through the pom.xml file in your project.
