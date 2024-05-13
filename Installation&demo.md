@@ -20,3 +20,15 @@ export MAVEN_HOME=/data/build-tools/apache-maven-3.9.6
 export PATH=$MAVEN_HOME/bin:"$PATH"
 export PATH
 ```
+
+- now you can logout and login again to the server, then you can find the mvn has been installed on the server.
+
+```
+[root@master ~]# mvn -v
+Apache Maven 3.9.6 (bc0240f3c744dd6b6ec2920b3cd08dcc295161ae)
+Maven home: /data/build-tools/apache-maven-3.9.6
+Java version: 11.0.23, vendor: Amazon.com Inc., runtime: /usr/lib/jvm/java-11-amazon-corretto.x86_64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.10.215-203.850.amzn2.x86_64", arch: "amd64", family: "unix"
+[root@master ~]#
+```
