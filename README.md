@@ -1,7 +1,7 @@
 # Maven
 
 Welcome to the Maven repository ! This repository serves the understanding of Maven and its fundamental. you'll find useful resources and guides to enhance your skills.
-an finally you can try in one maven project.
+and finally you can try with one maven project.
 
 1. Maven-basics
    - what maven dows
